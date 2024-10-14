@@ -1,9 +1,17 @@
-import React from 'react'
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import PropTypes from "prop-types";
 
-const Layout = () => {
+export const Layout = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
 
-export default Layout
+Layout.propTypes = {
+  children: PropTypes.any,
+};

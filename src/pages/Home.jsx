@@ -1,9 +1,16 @@
-import React from 'react'
+import { Blog, Contact, Hero, Portfolio, Resume, Service, Skill, Testimonial } from "../utils/Router";
 
-const Home = () => {
+export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
-
-export default Home
+    <>
+      <Hero />
+      <Service />
+      <Portfolio />
+      <Resume />
+      <Skill />
+      <Testimonial />
+      <Blog />
+      <Contact />
+    </>
+  );
+};
